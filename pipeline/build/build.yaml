@@ -15,7 +15,7 @@ stages:
         - task: UsePythonVersion@0
           inputs:
              versionSpec: '3.x'
-  branches:
-    include:
-      - master
-      - not_master
+      branches:
+      include:
+        - master
+        - not_master
