@@ -4,10 +4,14 @@ trigger:
         - master
 
 pool:
-  vmImage: 'unbuntu-latest'
+  vmImage: 'ubuntu-latest'
 
 stages:
-- stage: build
-  task: UsePythonVersion@0
-  inputs:
-    versionSpec: '3.x'
+- stage: Build
+  displayName: 'First try'
+  jobs:
+    - job: Build
+      steps:
+        - task: UsePythonVersion@0
+          inputs:
+             versionSpec: '3.x'
