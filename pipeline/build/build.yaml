@@ -10,7 +10,7 @@ stages:
 - stage: Build
   displayName: 'First try'
   jobs:
-    - job: Build
+    - job: Builder
       steps:
         - task: UsePythonVersion@0
           inputs:
