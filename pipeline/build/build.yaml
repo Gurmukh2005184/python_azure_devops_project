@@ -1,0 +1,7 @@
+trigger:
+  branches:
+    include:
+        - master
+
+pool:
+  vmImage: 'unbuntu-latest'
