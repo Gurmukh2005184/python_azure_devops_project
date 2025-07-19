@@ -8,14 +8,10 @@ pool:
 
 stages:
 - stage: Build
-  displayName: 'Build stage'
+  displayName: 'First try'
   jobs:
     - job: Builder
       steps:
         - task: UsePythonVersion@0
           inputs:
              versionSpec: '3.x'
-  branches:
-    include:
-      - master
-      - not_master
